@@ -52,29 +52,81 @@
   animation: hyunicon 3s ease-in-out infinite;
 }
 
+/* =========================
+   NUEVO SVG SERPIENTE
+========================= */
+
 #hyunin-glow5 .snake-icon {
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
-  margin: 0 auto 16px;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 18px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 #hyunin-glow5 .snake-icon svg {
-  width: 86px;
-  height: 86px;
-  stroke: #8cff8a;
-  fill: none;
-  filter: drop-shadow(0 0 8px rgba(140,255,138,.38));
-  opacity: .95;
-  transition: .4s ease;
-  animation: hyunicon 3s ease-in-out infinite;
+  display: block;
+  width: 150px;
+  height: 150px;
+  overflow: visible;
+  filter:
+    drop-shadow(0 0 6px rgba(140,255,138,.65))
+    drop-shadow(0 0 16px rgba(140,255,138,.35));
+  animation: hyunsnake 3s ease-in-out infinite;
 }
 
-#hyunin-glow5 .snake-icon svg:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 14px rgba(140,255,138,.65));
+/* cuerpo */
+#hyunin-glow5 .snake-body {
+  fill: none;
+  stroke: #8cff8a;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
+
+/* cabeza */
+#hyunin-glow5 .snake-head {
+  fill: #151716;
+  stroke: #8cff8a;
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+/* lengua */
+#hyunin-glow5 .snake-tongue {
+  fill: none;
+  stroke: #8cff8a;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* ojo */
+#hyunin-glow5 .snake-eye {
+  fill: #8cff8a;
+  stroke: none;
+}
+
+/* animación glow serpiente */
+@keyframes hyunsnake {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 6px rgba(140,255,138,.50))
+      drop-shadow(0 0 14px rgba(140,255,138,.25));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 9px rgba(140,255,138,.85))
+      drop-shadow(0 0 24px rgba(140,255,138,.50));
+  }
+}
+
+/* ========================= */
 
 #hyunin-glow5 .title {
   position: relative;
