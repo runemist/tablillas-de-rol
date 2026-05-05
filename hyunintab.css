@@ -26,101 +26,33 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 190px;
+  height: 235px;
   background:
-    radial-gradient(circle at 50% 0%, rgba(140,255,138,.20), transparent 42%),
-    linear-gradient(180deg, rgba(140,255,138,.10), rgba(140,255,138,.04), transparent),
-    repeating-linear-gradient(135deg, rgba(140,255,138,.055) 0px, rgba(140,255,138,.055) 1px, transparent 1px, transparent 8px);
-  opacity: .85;
+    radial-gradient(circle at 50% 26%, rgba(140,255,138,.13), transparent 34%),
+    linear-gradient(180deg, rgba(140,255,138,.08), rgba(140,255,138,.035), transparent 82%),
+    repeating-linear-gradient(135deg, rgba(140,255,138,.04) 0px, rgba(140,255,138,.04) 1px, transparent 1px, transparent 9px);
+  opacity: .65;
   pointer-events: none;
-}
-
-#hyunin-glow5 .icon {
-  position: relative;
-  z-index: 1;
-  width: 46px;
-  height: 46px;
-  margin: 0 auto 22px;
-  border-radius: 50%;
-  border: 1px solid rgba(140,255,138,.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8cff8a;
-  font-size: 18px;
-  box-shadow: 0 0 14px rgba(140,255,138,.25);
-  animation: hyunicon 3s ease-in-out infinite;
 }
 
 #hyunin-glow5 .hyun-snake-mark {
   position: relative;
   z-index: 1;
-  width: 150px;
-  height: 150px;
+  width: 115px;
+  height: 115px;
   margin: 0 auto 18px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  outline: 0 !important;
-}
-
-#hyunin-glow5 .hyun-snake-mark svg {
-  display: block;
-  width: 150px;
-  height: 150px;
-  overflow: visible;
-  background: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  filter:
-    drop-shadow(0 0 6px rgba(140,255,138,.65))
-    drop-shadow(0 0 16px rgba(140,255,138,.35));
-  animation: hyunsnake 3s ease-in-out infinite;
-}
-
-#hyunin-glow5 .hyun-snake-body {
-  fill: none;
-  stroke: #8cff8a;
-  stroke-width: 9;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-#hyunin-glow5 .hyun-snake-head {
-  fill: #151716;
-  stroke: #8cff8a;
-  stroke-width: 4;
-  stroke-linejoin: round;
-}
-
-#hyunin-glow5 .hyun-snake-tongue {
-  fill: none;
-  stroke: #8cff8a;
-  stroke-width: 2;
-  stroke-linecap: round;
-}
-
-#hyunin-glow5 .hyun-snake-eye {
-  fill: #8cff8a;
-  stroke: none;
-}
-
-@keyframes hyunsnake {
-  0%, 100% {
-    filter:
-      drop-shadow(0 0 6px rgba(140,255,138,.50))
-      drop-shadow(0 0 14px rgba(140,255,138,.25));
-  }
-
-  50% {
-    filter:
-      drop-shadow(0 0 9px rgba(140,255,138,.85))
-      drop-shadow(0 0 24px rgba(140,255,138,.50));
-  }
+  background-color: #8cff8a;
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg");
+  mask-image: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  border: 0;
+  box-shadow: none;
+  filter: none;
 }
 
 #hyunin-glow5 .title {
@@ -146,6 +78,21 @@
   text-transform: uppercase;
 }
 
+#hyunin-glow5 .dialog {
+  position: relative;
+  z-index: 1;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: rgba(140,255,138,.08);
+  border: 1px solid rgba(140,255,138,.35);
+  border-radius: 16px;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(140,255,138,.12);
+}
+
 #hyunin-glow5 .text {
   position: relative;
   z-index: 1;
@@ -169,21 +116,6 @@
   color: #e4ffdf;
   border-bottom-color: rgba(228,255,223,.8);
   text-shadow: 0 0 10px rgba(140,255,138,.35);
-}
-
-#hyunin-glow5 .dialog {
-  position: relative;
-  z-index: 1;
-  margin: 28px 0;
-  padding: 22px 26px;
-  background: rgba(140,255,138,.08);
-  border: 1px solid rgba(140,255,138,.35);
-  border-radius: 16px;
-  color: #ffffff;
-  font-style: italic;
-  line-height: 1.7;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(140,255,138,.12);
 }
 
 #hyunin-glow5 .hyu,
@@ -214,17 +146,5 @@
 
   50% {
     box-shadow: 0 0 28px rgba(140,255,138,.36), 0 0 55px rgba(140,255,138,.16);
-  }
-}
-
-@keyframes hyunicon {
-  0%, 100% {
-    box-shadow: 0 0 12px rgba(140,255,138,.22);
-    filter: drop-shadow(0 0 6px rgba(140,255,138,.25));
-  }
-
-  50% {
-    box-shadow: 0 0 22px rgba(140,255,138,.45);
-    filter: drop-shadow(0 0 12px rgba(140,255,138,.55));
   }
 }
