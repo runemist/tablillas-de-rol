@@ -233,3 +233,29 @@
     filter: drop-shadow(0 0 12px rgba(140,255,138,.55));
   }
 }
+
+#hyunin-glow5 .snake-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 18px;
+  padding: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#hyunin-glow5 .snake-icon,
+#hyunin-glow5 .snake-icon * {
+  box-sizing: border-box;
+}
+
+#hyunin-glow5 .snake-icon svg {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
