@@ -1,0 +1,183 @@
+#hyunin-glow5 {
+  width: 680px;
+  max-width: 92%;
+  margin: 30px auto;
+  padding: 18px;
+  background: #070807;
+  border: 1px solid rgba(140,255,138,.65);
+  border-radius: 28px;
+  box-shadow: 0 0 18px rgba(140,255,138,.22);
+  font-family: Arial, sans-serif;
+  color: #e9e9e9;
+  animation: hyunglow 4s ease-in-out infinite;
+}
+
+#hyunin-glow5 .box {
+  position: relative;
+  overflow: hidden;
+  padding: 35px;
+  border-radius: 22px;
+  background: #151716;
+  border: 1px solid rgba(140,255,138,.28);
+}
+
+#hyunin-glow5 .toptexture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 190px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(140,255,138,.20), transparent 42%),
+    linear-gradient(180deg, rgba(140,255,138,.10), rgba(140,255,138,.04), transparent),
+    repeating-linear-gradient(135deg, rgba(140,255,138,.055) 0px, rgba(140,255,138,.055) 1px, transparent 1px, transparent 8px);
+  opacity: .85;
+  pointer-events: none;
+}
+
+#hyunin-glow5 .icon {
+  position: relative;
+  z-index: 1;
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(140,255,138,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8cff8a;
+  font-size: 18px;
+  box-shadow: 0 0 14px rgba(140,255,138,.25);
+  animation: hyunicon 3s ease-in-out infinite;
+}
+
+#hyunin-glow5 .snake-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+#hyunin-glow5 .snake-icon svg {
+  width: 86px;
+  height: 86px;
+  stroke: #8cff8a;
+  fill: none;
+  filter: drop-shadow(0 0 8px rgba(140,255,138,.38));
+  opacity: .95;
+  transition: .4s ease;
+  animation: hyunicon 3s ease-in-out infinite;
+}
+
+#hyunin-glow5 .snake-icon svg:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 14px rgba(140,255,138,.65));
+}
+
+#hyunin-glow5 .title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  text-align: center;
+  color: #8cff8a;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(140,255,138,.22);
+}
+
+#hyunin-glow5 .sub {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0 35px;
+  text-align: center;
+  color: #a7a7a7;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#hyunin-glow5 .text {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#hyunin-glow5 .text a {
+  color: #b9ffae;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(185,255,174,.45);
+  text-shadow: 0 0 6px rgba(140,255,138,.15);
+  transition: .3s ease;
+}
+
+#hyunin-glow5 .text a:hover {
+  color: #e4ffdf;
+  border-bottom-color: rgba(228,255,223,.8);
+  text-shadow: 0 0 10px rgba(140,255,138,.35);
+}
+
+#hyunin-glow5 .dialog {
+  position: relative;
+  z-index: 1;
+  margin: 28px 0;
+  padding: 22px 26px;
+  background: rgba(140,255,138,.08);
+  border: 1px solid rgba(140,255,138,.35);
+  border-radius: 16px;
+  color: #ffffff;
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(140,255,138,.12);
+}
+
+#hyunin-glow5 .hyu,
+#hyunin-glow5 hyu {
+  color: #a8ff9e;
+  font-style: italic;
+  letter-spacing: .3px;
+  text-shadow: 0 0 6px rgba(140,255,138,.18);
+}
+
+#hyunin-glow5 .sign {
+  position: relative;
+  z-index: 1;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(140,255,138,.30);
+  color: #8cff8a;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@keyframes hyunglow {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(140,255,138,.20), 0 0 35px rgba(140,255,138,.08);
+  }
+
+  50% {
+    box-shadow: 0 0 28px rgba(140,255,138,.36), 0 0 55px rgba(140,255,138,.16);
+  }
+}
+
+@keyframes hyunicon {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(140,255,138,.22);
+    filter: drop-shadow(0 0 6px rgba(140,255,138,.25));
+  }
+
+  50% {
+    box-shadow: 0 0 22px rgba(140,255,138,.45);
+    filter: drop-shadow(0 0 12px rgba(140,255,138,.55));
+  }
+}
