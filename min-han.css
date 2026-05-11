@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@400;500;600&display=swap');
+
+.mj-post{
+  --dark:#111111;
+  width:570px;
+  max-width:100%;
+  margin:0 auto 42px;
+  position:relative;
+  box-sizing:border-box;
+  padding:42px 48px 30px;
+  background:var(--dark);
+  color:#f2f2f2;
+  font-family:'Montserrat',Arial,sans-serif;
+  border-radius:15px 15px 30px 30px;
+  overflow:hidden;
+}
+
+.mj-post::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:1px solid color-mix(in srgb,var(--main) 68%,transparent);
+  border-radius:15px 15px 30px 30px;
+  pointer-events:none;
+  opacity:.85;
+}
+
+.mj-post::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:46px;
+  height:100%;
+  background:linear-gradient(180deg,var(--main),var(--soft));
+  opacity:.82;
+  border-radius:0 15px 30px 0;
+}
+
+.mj-post .post-floral{
+  position:absolute;
+  right:0;
+  top:0;
+  width:46px;
+  height:100%;
+  z-index:1;
+  opacity:.18;
+  background:
+    radial-gradient(circle at 68% 14%, rgba(0,0,0,.35) 0 2px, transparent 3px),
+    radial-gradient(ellipse at 35% 35%, rgba(0,0,0,.33) 0 16px, transparent 17px),
+    radial-gradient(ellipse at 75% 58%, rgba(0,0,0,.28) 0 20px, transparent 21px),
+    radial-gradient(ellipse at 30% 84%, rgba(0,0,0,.24) 0 18px, transparent 19px);
+  pointer-events:none;
+}
+
+.mj-post .post-head{
+  position:relative;
+  z-index:2;
+  margin:0 38px 48px 0;
+}
+
+.mj-post .post-title{
+  margin:0;
+  font-family:'Rajdhani',Arial,sans-serif;
+  font-size:31px;
+  line-height:.9;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  font-weight:400;
+  color:var(--main);
+}
+
+.mj-post .post-subtitle{
+  margin-top:5px;
+  font-size:8px;
+  line-height:1;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#ffffff;
+}
+
+.mj-post .post-body{
+  position:relative;
+  z-index:2;
+  margin-right:38px;
+  font-size:11px;
+  line-height:1.35;
+  text-align:justify;
+  font-weight:600;
+  color:#f5f5f5;
+}
+
+.mj-post .post-body b,
+.mj-post .post-body strong{
+  color:var(--main);
+  font-weight:700;
+}
+
+.mj-post .post-body i,
+.mj-post .post-body em{
+  color:var(--soft);
+  font-weight:600;
+}
+
+.mj-post .post-data{
+  position:relative;
+  z-index:2;
+  margin:34px 0 0;
+  padding:9px 14px;
+  background:#050505;
+  border-radius:9px;
+  text-align:center;
+  font-size:8px;
+  line-height:1;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  font-weight:700;
+  color:#ffffff;
+}
+
+.mj-post .post-data a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.mj-post .post-data b{
+  color:var(--main);
+}
