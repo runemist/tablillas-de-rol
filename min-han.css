@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@400;500;600&display=swap');
 
-.mj-post{
+#min-post{
+  --main:#5C94AD;
+  --soft:#9EC4D5;
+}
+
+#han-post{
+  --main:#826693;
+  --soft:#B8A0C6;
+}
+
+#min-post,
+#han-post{
   --dark:#111111;
   width:570px;
   max-width:100%;
@@ -15,7 +26,8 @@
   overflow:hidden;
 }
 
-.mj-post::before{
+#min-post::before,
+#han-post::before{
   content:"";
   position:absolute;
   inset:0;
@@ -25,7 +37,8 @@
   opacity:.85;
 }
 
-.mj-post::after{
+#min-post::after,
+#han-post::after{
   content:"";
   position:absolute;
   right:0;
@@ -37,7 +50,8 @@
   border-radius:0 15px 30px 0;
 }
 
-.mj-post .post-floral{
+#min-post .hm-floral,
+#han-post .hm-floral{
   position:absolute;
   right:0;
   top:0;
@@ -53,13 +67,15 @@
   pointer-events:none;
 }
 
-.mj-post .post-head{
+#min-post .hm-head,
+#han-post .hm-head{
   position:relative;
   z-index:2;
   margin:0 38px 48px 0;
 }
 
-.mj-post .post-title{
+#min-post .hm-title,
+#han-post .hm-title{
   margin:0;
   font-family:'Rajdhani',Arial,sans-serif;
   font-size:31px;
@@ -70,7 +86,8 @@
   color:var(--main);
 }
 
-.mj-post .post-subtitle{
+#min-post .hm-subtitle,
+#han-post .hm-subtitle{
   margin-top:5px;
   font-size:8px;
   line-height:1;
@@ -80,7 +97,8 @@
   color:#ffffff;
 }
 
-.mj-post .post-body{
+#min-post .hm-body,
+#han-post .hm-body{
   position:relative;
   z-index:2;
   margin-right:38px;
@@ -91,19 +109,24 @@
   color:#f5f5f5;
 }
 
-.mj-post .post-body b,
-.mj-post .post-body strong{
+#min-post .hm-body b,
+#han-post .hm-body b,
+#min-post .hm-body strong,
+#han-post .hm-body strong{
   color:var(--main);
   font-weight:700;
 }
 
-.mj-post .post-body i,
-.mj-post .post-body em{
+#min-post .hm-body i,
+#han-post .hm-body i,
+#min-post .hm-body em,
+#han-post .hm-body em{
   color:var(--soft);
   font-weight:600;
 }
 
-.mj-post .post-data{
+#min-post .hm-data,
+#han-post .hm-data{
   position:relative;
   z-index:2;
   margin:34px 0 0;
@@ -119,11 +142,15 @@
   color:#ffffff;
 }
 
-.mj-post .post-data a{
+#min-post .hm-data a,
+#han-post .hm-data a{
   color:#ffffff;
   text-decoration:none;
 }
 
-.mj-post .post-data b{
+#min-post .hm-data b,
+#han-post .hm-data b,
+#min-post .hm-data strong,
+#han-post .hm-data strong{
   color:var(--main);
 }
