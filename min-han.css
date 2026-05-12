@@ -155,8 +155,8 @@
   color:var(--main);
 }
 
-#min-post .hmdata a,
-#han-post .hmdata a{
+#min-post .hmdata a.mentiontag.tooltipstered,
+#han-post .hmdata a.mentiontag.tooltipstered{
   background: none!important;
   font-size:10px!important;
 }
