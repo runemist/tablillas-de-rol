@@ -82,14 +82,14 @@
   line-height:.9;
   letter-spacing:1.5px;
   text-transform:uppercase;
-  font-weight:400;
+  font-weight:500;
   color:var(--main);
 }
 
 #min-post .hm-subtitle,
 #han-post .hm-subtitle{
   margin-top:5px;
-  font-size:8px;
+  font-size:13px;
   line-height:1;
   letter-spacing:.4px;
   text-transform:uppercase;
@@ -102,7 +102,7 @@
   position:relative;
   z-index:2;
   margin-right:38px;
-  font-size:11px;
+  font-size:12px;
   line-height:1.35;
   text-align:justify;
   font-weight:600;
