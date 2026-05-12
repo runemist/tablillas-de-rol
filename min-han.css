@@ -134,7 +134,7 @@
   background:#050505;
   border-radius:9px;
   text-align:center;
-  font-size:8px;
+  font-size:10px;
   line-height:1;
   letter-spacing:.5px;
   text-transform:uppercase;
@@ -153,4 +153,10 @@
 #min-post .hm-data strong,
 #han-post .hm-data strong{
   color:var(--main);
+}
+
+#min-post a,
+#han-post a{
+  background: none!important;
+  font-size:10px!important;
 }
