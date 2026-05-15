@@ -37,8 +37,9 @@
   position: relative;
   z-index: 1;
   width: 115px;
-  height: 115px;
-  margin: 0 auto 18px;
+  height: 50px;
+  rotate: -45deg;
+  margin: 0 auto 28px;
   background-color: var(--neon-color);
   -webkit-mask: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg") center / contain no-repeat;
   mask: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg") center / contain no-repeat;
