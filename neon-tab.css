@@ -127,20 +127,24 @@
 .neon-template .neon-ost{
   position:relative;
   z-index:1;
-  margin:25px 0;
   padding:15px 18px;
   border:1px solid color-mix(in srgb, var(--neon-color) 38%, transparent);
   border-radius:16px;
   background:linear-gradient(180deg,color-mix(in srgb, var(--neon-color) 12%, transparent),color-mix(in srgb, var(--neon-panel) 78%, black));
   box-shadow:0 0 22px color-mix(in srgb, var(--neon-color) 10%, transparent),inset 0 0 14px color-mix(in srgb, var(--neon-color) 4%, transparent);
-  display:grid;
-  grid-template-columns:1fr 250px;
+  display:flex;
   align-items:center;
-  gap:16px;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.neon-template .neon-ost-info{
+  flex:1 1 auto;
+  min-width:0;
 }
 
 .neon-template .neon-ost-title{
-  font-size:10px;
+  font-size:11px;
   font-weight:700;
   letter-spacing:5px;
   text-transform:uppercase;
@@ -149,15 +153,16 @@
 
 .neon-template .neon-ost-artist{
   margin-top:5px;
-  font-size:9px;
+  font-size:10px;
   font-weight:500;
-  letter-spacing:2.5px;
   text-transform:uppercase;
   color:#a7a7a7;
 }
 
 .neon-template .neon-ost-audio{
+  flex:0 0 250px;
   width:250px;
+  max-width:250px;
   height:34px;
   opacity:.88;
   filter:grayscale(.35) brightness(.82) contrast(1.1);
