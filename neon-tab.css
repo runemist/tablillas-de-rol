@@ -3,12 +3,12 @@
   max-width: 92%;
   margin: 30px auto;
   padding: 18px;
-  background: var(--neon-bg, #070807);
-  border: 1px solid color-mix(in srgb, var(--neon-accent, #8cff8a) 65%, transparent);
+  background: var(--neon-bg);
+  border: 1px solid color-mix(in srgb, var(--neon-color) 65%, transparent);
   border-radius: 28px;
-  box-shadow: 0 0 18px color-mix(in srgb, var(--neon-accent, #8cff8a) 22%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--neon-color) 22%, transparent);
   font-family: Arial, sans-serif;
-  color: var(--neon-text, #e9e9e9);
+  color: #e9e9e9;
   animation: neon-glow 4s ease-in-out infinite;
 }
 
@@ -17,8 +17,8 @@
   overflow: hidden;
   padding: 35px;
   border-radius: 22px;
-  background: var(--neon-panel, #151716);
-  border: 1px solid color-mix(in srgb, var(--neon-accent, #8cff8a) 28%, transparent);
+  background: var(--neon-panel);
+  border: 1px solid color-mix(in srgb, var(--neon-color) 28%, transparent);
 }
 
 .neon-template .neon-texture {
@@ -26,9 +26,9 @@
   inset: 0 0 auto 0;
   height: 235px;
   background:
-    radial-gradient(circle at 50% 26%, color-mix(in srgb, var(--neon-accent, #8cff8a) 13%, transparent), transparent 34%),
-    linear-gradient(180deg, color-mix(in srgb, var(--neon-accent, #8cff8a) 8%, transparent), color-mix(in srgb, var(--neon-accent, #8cff8a) 3.5%, transparent), transparent 82%),
-    repeating-linear-gradient(135deg, color-mix(in srgb, var(--neon-accent, #8cff8a) 4%, transparent) 0px, color-mix(in srgb, var(--neon-accent, #8cff8a) 4%, transparent) 1px, transparent 1px, transparent 9px);
+    radial-gradient(circle at 50% 26%, color-mix(in srgb, var(--neon-color) 13%, transparent), transparent 34%),
+    linear-gradient(180deg, color-mix(in srgb, var(--neon-color) 8%, transparent), color-mix(in srgb, var(--neon-color) 3.5%, transparent), transparent 82%),
+    repeating-linear-gradient(135deg, color-mix(in srgb, var(--neon-color) 4%, transparent) 0px, color-mix(in srgb, var(--neon-color) 4%, transparent) 1px, transparent 1px, transparent 9px);
   opacity: .65;
   pointer-events: none;
 }
@@ -37,10 +37,9 @@
   position: relative;
   z-index: 1;
   width: 115px;
-  height: 50px;
-  rotate: -45deg;
+  height: 115px;
   margin: 0 auto 18px;
-  background-color: var(--neon-accent, #8cff8a);
+  background-color: var(--neon-color);
   -webkit-mask: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg") center / contain no-repeat;
   mask: url("https://cdn.jsdelivr.net/gh/runemist/svg@main/vecteezy_snake-icon-style_8330202.svg") center / contain no-repeat;
 }
@@ -49,11 +48,11 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  color: var(--neon-accent, #8cff8a);
+  color: var(--neon-color);
   font-size: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: 0 0 10px color-mix(in srgb, var(--neon-accent, #8cff8a) 22%, transparent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--neon-color) 22%, transparent);
 }
 
 .neon-template .neon-sub {
@@ -61,7 +60,7 @@
   z-index: 1;
   margin: 10px 0 35px;
   text-align: center;
-  color: var(--neon-muted, #a7a7a7);
+  color: #a7a7a7;
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -72,14 +71,14 @@
   z-index: 1;
   margin: 28px 0;
   padding: 22px 26px;
-  background: color-mix(in srgb, var(--neon-accent, #8cff8a) 8%, transparent);
-  border: 1px solid color-mix(in srgb, var(--neon-accent, #8cff8a) 35%, transparent);
+  background: color-mix(in srgb, var(--neon-color) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--neon-color) 35%, transparent);
   border-radius: 16px;
   color: #fff;
   font-style: italic;
   line-height: 1.7;
   text-align: center;
-  box-shadow: 0 0 12px color-mix(in srgb, var(--neon-accent, #8cff8a) 12%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--neon-color) 12%, transparent);
 }
 
 .neon-template .neon-text {
@@ -91,24 +90,24 @@
 }
 
 .neon-template .neon-text i {
-  color: var(--neon-soft, #a8ff9e);
+  color: color-mix(in srgb, var(--neon-color) 75%, white);
   letter-spacing: .3px;
-  text-shadow: 0 0 6px color-mix(in srgb, var(--neon-accent, #8cff8a) 18%, transparent);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--neon-color) 18%, transparent);
 }
 
 .neon-template a {
   background: transparent !important;
-  color: var(--neon-link, #b9ffae) !important;
+  color: color-mix(in srgb, var(--neon-color) 70%, white) !important;
   text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--neon-link, #b9ffae) 45%, transparent);
-  text-shadow: 0 0 6px color-mix(in srgb, var(--neon-accent, #8cff8a) 15%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--neon-color) 45%, transparent);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--neon-color) 15%, transparent);
   transition: .3s ease;
 }
 
 .neon-template a:hover {
-  color: var(--neon-link-hover, #e4ffdf) !important;
-  border-bottom-color: color-mix(in srgb, var(--neon-link-hover, #e4ffdf) 80%, transparent);
-  text-shadow: 0 0 10px color-mix(in srgb, var(--neon-accent, #8cff8a) 35%, transparent);
+  color: color-mix(in srgb, var(--neon-color) 35%, white) !important;
+  border-bottom-color: color-mix(in srgb, var(--neon-color) 80%, transparent);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--neon-color) 35%, transparent);
 }
 
 .neon-template .neon-sign {
@@ -116,8 +115,8 @@
   z-index: 1;
   margin-top: 22px;
   padding-top: 16px;
-  border-top: 1px solid color-mix(in srgb, var(--neon-accent, #8cff8a) 30%, transparent);
-  color: var(--neon-accent, #8cff8a);
+  border-top: 1px solid color-mix(in srgb, var(--neon-color) 30%, transparent);
+  color: var(--neon-color);
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -126,10 +125,10 @@
 
 @keyframes neon-glow {
   0%, 100% {
-    box-shadow: 0 0 18px color-mix(in srgb, var(--neon-accent, #8cff8a) 20%, transparent), 0 0 35px color-mix(in srgb, var(--neon-accent, #8cff8a) 8%, transparent);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--neon-color) 20%, transparent), 0 0 35px color-mix(in srgb, var(--neon-color) 8%, transparent);
   }
 
   50% {
-    box-shadow: 0 0 28px color-mix(in srgb, var(--neon-accent, #8cff8a) 36%, transparent), 0 0 55px color-mix(in srgb, var(--neon-accent, #8cff8a) 16%, transparent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--neon-color) 36%, transparent), 0 0 55px color-mix(in srgb, var(--neon-color) 16%, transparent);
   }
 }
